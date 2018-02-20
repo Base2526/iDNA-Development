@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="3us-ga-XSv">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="success-baby" translatesAutoresizingMaskIntoConstraints="NO" id="T7I-F0-pOe" userLabel="Image">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="160"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6VA-Mo-XZE">
+                    <rect key="frame" x="8" y="72" width="80" height="80"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="bFt-rn-Vww"/>
+                        <constraint firstAttribute="height" constant="80" id="ek1-xm-loD"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXU-9L-kjz">
+                    <rect key="frame" x="96" y="131" width="379" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="lla-QM-9fq"/>
+                        <constraint firstAttribute="width" constant="379" id="oA3-UQ-eTy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="T7I-F0-pOe" secondAttribute="trailing" id="HPX-uV-Ow1"/>
+                <constraint firstItem="6VA-Mo-XZE" firstAttribute="leading" secondItem="3us-ga-XSv" secondAttribute="leading" constant="8" id="Irw-CF-Exh"/>
+                <constraint firstItem="tXU-9L-kjz" firstAttribute="leading" secondItem="6VA-Mo-XZE" secondAttribute="trailing" constant="8" id="OmB-ql-TAb"/>
+                <constraint firstItem="T7I-F0-pOe" firstAttribute="top" secondItem="3us-ga-XSv" secondAttribute="top" id="czw-QJ-4lb"/>
+                <constraint firstAttribute="bottom" secondItem="T7I-F0-pOe" secondAttribute="bottom" id="dq7-v2-2AY"/>
+                <constraint firstAttribute="bottom" secondItem="6VA-Mo-XZE" secondAttribute="bottom" constant="8" id="hm1-5W-TNE"/>
+                <constraint firstItem="T7I-F0-pOe" firstAttribute="leading" secondItem="3us-ga-XSv" secondAttribute="leading" id="wfH-hJ-or9"/>
+                <constraint firstItem="tXU-9L-kjz" firstAttribute="bottom" secondItem="6VA-Mo-XZE" secondAttribute="bottom" id="z5Q-bt-2ao"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="269" y="141"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="success-baby" width="640" height="425"/>
+    </resources>
+</document>

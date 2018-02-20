@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17A405" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell_H_TabiDNA" id="nXL-V9-WuC" customClass="Cell_H_TabiDNA">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BqY-7D-NjI">
+                    <rect key="frame" x="96" y="16" width="55" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55" id="5Bp-az-7BS"/>
+                        <constraint firstAttribute="height" constant="21" id="zpK-tw-PQo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Somkid Simajarn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ye-sa-IMU">
+                    <rect key="frame" x="158" y="16" width="217" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Bfm-fy-O4U"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="217" id="jyP-aX-WrC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wmt-2O-yTT">
+                    <rect key="frame" x="96" y="48" width="55" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55" id="DLI-vC-5jp"/>
+                        <constraint firstAttribute="height" constant="21" id="mmc-DF-1Zv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Lorem ipsum dolor sit er elit lamet, consectetaur." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rXK-jD-fQY">
+                    <rect key="frame" x="158" y="48" width="217" height="51"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="217" id="VV4-mr-sNK"/>
+                        <constraint firstAttribute="height" constant="51" id="fUu-42-JWf"/>
+                    </constraints>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="szN-vD-cEU" customClass="HJManagedImageV">
+                    <rect key="frame" x="16" y="10" width="80" height="80"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="Rss-mu-k6l"/>
+                        <constraint firstAttribute="width" constant="80" id="fhL-zt-wtH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="9Ye-sa-IMU" secondAttribute="trailing" id="1GF-BC-DsX"/>
+                <constraint firstItem="BqY-7D-NjI" firstAttribute="top" secondItem="nXL-V9-WuC" secondAttribute="top" constant="16" id="MY9-Mf-mxT"/>
+                <constraint firstItem="9Ye-sa-IMU" firstAttribute="leading" secondItem="BqY-7D-NjI" secondAttribute="trailing" constant="7" id="UKC-az-mOP"/>
+                <constraint firstItem="Wmt-2O-yTT" firstAttribute="top" secondItem="BqY-7D-NjI" secondAttribute="bottom" constant="11" id="Ud7-na-hET"/>
+                <constraint firstAttribute="trailing" secondItem="rXK-jD-fQY" secondAttribute="trailing" id="X6G-rJ-fIE"/>
+                <constraint firstItem="rXK-jD-fQY" firstAttribute="leading" secondItem="Wmt-2O-yTT" secondAttribute="trailing" constant="7" id="ZMU-an-58P"/>
+                <constraint firstItem="BqY-7D-NjI" firstAttribute="leading" secondItem="szN-vD-cEU" secondAttribute="trailing" id="iHo-X5-FCE"/>
+                <constraint firstItem="Wmt-2O-yTT" firstAttribute="leading" secondItem="BqY-7D-NjI" secondAttribute="trailing" constant="-55" id="iku-au-Yqh"/>
+                <constraint firstItem="szN-vD-cEU" firstAttribute="leading" secondItem="nXL-V9-WuC" secondAttribute="leading" constant="16" id="lqg-pU-gX2"/>
+                <constraint firstItem="9Ye-sa-IMU" firstAttribute="bottom" secondItem="BqY-7D-NjI" secondAttribute="bottom" id="m0U-xE-fP1"/>
+                <constraint firstItem="rXK-jD-fQY" firstAttribute="top" secondItem="Wmt-2O-yTT" secondAttribute="top" id="taM-sF-JeS"/>
+                <constraint firstItem="szN-vD-cEU" firstAttribute="centerY" secondItem="nXL-V9-WuC" secondAttribute="centerY" id="wcI-Dt-0f4"/>
+            </constraints>
+            <connections>
+                <outlet property="labelName" destination="9Ye-sa-IMU" id="UFQ-x0-CFM"/>
+                <outlet property="photo" destination="szN-vD-cEU" id="4rj-Yi-dWx"/>
+                <outlet property="tvStatus" destination="rXK-jD-fQY" id="7y8-Jd-6G7"/>
+            </connections>
+            <point key="canvasLocation" x="-189.5" y="-127"/>
+        </collectionReusableView>
+    </objects>
+</document>

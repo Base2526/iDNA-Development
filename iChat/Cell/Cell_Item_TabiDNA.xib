@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17A405" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell_Item_TabiDNA" id="4hw-M1-egg" customClass="Cell_Item_TabiDNA">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hqf-7r-Gez" customClass="HJManagedImageV">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="6p7-bm-GKd"/>
+                            <constraint firstAttribute="height" constant="80" id="yV9-Wp-bXA"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kiI-R1-UTT">
+                        <rect key="frame" x="0.0" y="83" width="80" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="WcQ-47-gzu"/>
+                            <constraint firstAttribute="height" constant="17" id="a0i-RP-KfS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="kiI-R1-UTT" firstAttribute="leading" secondItem="4hw-M1-egg" secondAttribute="leading" id="0fJ-48-Uk7"/>
+                <constraint firstAttribute="trailing" secondItem="Hqf-7r-Gez" secondAttribute="trailing" id="2mv-0w-F1n"/>
+                <constraint firstItem="Hqf-7r-Gez" firstAttribute="leading" secondItem="4hw-M1-egg" secondAttribute="leading" id="CsR-mV-Y2N"/>
+                <constraint firstAttribute="bottom" secondItem="kiI-R1-UTT" secondAttribute="bottom" id="YDB-ug-F11"/>
+                <constraint firstItem="kiI-R1-UTT" firstAttribute="top" secondItem="Hqf-7r-Gez" secondAttribute="bottom" constant="3" id="f52-ns-LKI"/>
+                <constraint firstAttribute="trailing" secondItem="kiI-R1-UTT" secondAttribute="trailing" id="kJN-Oq-N6s"/>
+                <constraint firstItem="Hqf-7r-Gez" firstAttribute="top" secondItem="4hw-M1-egg" secondAttribute="top" id="wtv-MR-Fbu"/>
+            </constraints>
+            <size key="customSize" width="80" height="101"/>
+            <connections>
+                <outlet property="hjmImage" destination="Hqf-7r-Gez" id="Wpx-pV-em2"/>
+                <outlet property="labelName" destination="kiI-R1-UTT" id="cRh-df-1wL"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="101"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TabBarHome"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="IDReusableView" id="h0t-2w-rrc" customClass="IDReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcb-Ko-48g">
+                    <rect key="frame" x="96" y="16" width="55" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Kgy-ul-Wlh"/>
+                        <constraint firstAttribute="width" constant="55" id="VAS-Oh-UuF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Somkid Simajarn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nPf-5t-oV0">
+                    <rect key="frame" x="158" y="16" width="217" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="jFc-gY-KQM"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="217" id="vI4-3C-1Cd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fX0-vg-CO6">
+                    <rect key="frame" x="96" y="48" width="55" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="3yg-Sf-7rU"/>
+                        <constraint firstAttribute="width" constant="55" id="Cvz-5h-F6y"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Lorem ipsum dolor sit er elit lamet, consectetaur." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sps-C9-DpH">
+                    <rect key="frame" x="158" y="48" width="217" height="51"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="217" id="clm-Uz-Jch"/>
+                        <constraint firstAttribute="height" constant="51" id="dpX-Kx-iZA"/>
+                    </constraints>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xbz-Vj-wxg" customClass="HJManagedImageV">
+                    <rect key="frame" x="16" y="10" width="80" height="80"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="P5r-Q5-MHM"/>
+                        <constraint firstAttribute="width" constant="80" id="jzW-0Q-j9f"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="sps-C9-DpH" firstAttribute="leading" secondItem="fX0-vg-CO6" secondAttribute="trailing" constant="7" id="1JY-ep-Vsx"/>
+                <constraint firstItem="fX0-vg-CO6" firstAttribute="top" secondItem="dcb-Ko-48g" secondAttribute="bottom" constant="11" id="FWK-wb-Zci"/>
+                <constraint firstItem="fX0-vg-CO6" firstAttribute="leading" secondItem="dcb-Ko-48g" secondAttribute="trailing" constant="-55" id="JkG-xm-oTr"/>
+                <constraint firstItem="nPf-5t-oV0" firstAttribute="leading" secondItem="dcb-Ko-48g" secondAttribute="trailing" constant="7" id="aOL-9Q-Pee"/>
+                <constraint firstAttribute="trailing" secondItem="sps-C9-DpH" secondAttribute="trailing" id="aUH-Vl-17w"/>
+                <constraint firstAttribute="trailing" secondItem="nPf-5t-oV0" secondAttribute="trailing" id="ebe-cq-qfU"/>
+                <constraint firstItem="sps-C9-DpH" firstAttribute="top" secondItem="fX0-vg-CO6" secondAttribute="top" id="f3D-W5-s6h"/>
+                <constraint firstItem="nPf-5t-oV0" firstAttribute="bottom" secondItem="dcb-Ko-48g" secondAttribute="bottom" id="fHZ-nf-rgz"/>
+                <constraint firstItem="xbz-Vj-wxg" firstAttribute="centerY" secondItem="h0t-2w-rrc" secondAttribute="centerY" id="hmZ-as-WQA"/>
+                <constraint firstItem="dcb-Ko-48g" firstAttribute="top" secondItem="h0t-2w-rrc" secondAttribute="top" constant="16" id="qxN-6c-ESe"/>
+                <constraint firstItem="dcb-Ko-48g" firstAttribute="leading" secondItem="xbz-Vj-wxg" secondAttribute="trailing" id="x7N-Vw-PbO"/>
+                <constraint firstItem="xbz-Vj-wxg" firstAttribute="leading" secondItem="h0t-2w-rrc" secondAttribute="leading" constant="16" id="yLY-dx-sVB"/>
+            </constraints>
+            <connections>
+                <outlet property="labelName" destination="nPf-5t-oV0" id="0wu-qu-rPc"/>
+                <outlet property="photo" destination="xbz-Vj-wxg" id="Mte-kK-coy"/>
+                <outlet property="tvStatus" destination="sps-C9-DpH" id="PNz-Hu-8pv"/>
+            </connections>
+            <point key="canvasLocation" x="-189.5" y="-127"/>
+        </collectionReusableView>
+    </objects>
+</document>

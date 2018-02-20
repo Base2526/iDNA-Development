@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MyAppProfileMultiCell" rowHeight="120" id="j2Y-AR-pN9" customClass="MyAppProfileMultiCell">
+            <rect key="frame" x="0.0" y="0.0" width="451" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="j2Y-AR-pN9" id="13Y-aP-6Sq">
+                <rect key="frame" x="0.0" y="0.0" width="418" height="119"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="091234561, 091234562, 091234563, 091234564, 091234565, 091234566, 091234561, 091234562" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kY-tG-7s8" customClass="TopAlignedLabel">
+                        <rect key="frame" x="109" y="22" width="300" height="81"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="0Of-7D-vDF"/>
+                            <constraint firstAttribute="height" constant="81" id="fy8-Fa-hjz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yb-AZ-sli">
+                        <rect key="frame" x="1" y="49" width="100" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="6fu-38-Y12"/>
+                            <constraint firstAttribute="height" constant="21" id="y2J-Mi-Vcu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3Yb-AZ-sli" firstAttribute="centerY" secondItem="13Y-aP-6Sq" secondAttribute="centerY" id="1UA-q2-E20"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="6kY-tG-7s8" secondAttribute="bottom" constant="8" id="7FS-B7-AnR"/>
+                    <constraint firstItem="6kY-tG-7s8" firstAttribute="leading" secondItem="3Yb-AZ-sli" secondAttribute="trailing" constant="8" id="aTb-BI-f5s"/>
+                    <constraint firstItem="6kY-tG-7s8" firstAttribute="top" secondItem="13Y-aP-6Sq" secondAttribute="topMargin" constant="14" id="kVp-Tf-Rja"/>
+                    <constraint firstItem="3Yb-AZ-sli" firstAttribute="leading" secondItem="13Y-aP-6Sq" secondAttribute="leadingMargin" constant="-7" id="lvh-XZ-g1f"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="6kY-tG-7s8" secondAttribute="trailing" constant="42" id="Joj-Gn-zcV"/>
+            </constraints>
+            <connections>
+                <outlet property="labelDetail" destination="6kY-tG-7s8" id="Ma7-CX-x75"/>
+                <outlet property="labelName" destination="3Yb-AZ-sli" id="bZQ-AZ-GLs"/>
+            </connections>
+            <point key="canvasLocation" x="179.5" y="363"/>
+        </tableViewCell>
+    </objects>
+</document>

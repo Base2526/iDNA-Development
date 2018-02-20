@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyCardPhotoCell" rowHeight="100" id="JEd-dU-IAa" customClass="MyCardPhotoCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JEd-dU-IAa" id="8fL-kC-xJd">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xgi-HO-2ED" customClass="HJManagedImageV">
+                        <rect key="frame" x="108" y="8" width="80" height="80"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="8AU-GK-pKG"/>
+                            <constraint firstAttribute="width" constant="80" id="hq0-TD-f7g"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" tag="11" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-check.png" translatesAutoresizingMaskIntoConstraints="NO" id="U3E-lt-Zd3">
+                        <rect key="frame" x="27" y="6" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="4kH-x9-SIm"/>
+                            <constraint firstAttribute="height" constant="45" id="6Ao-1u-x0b"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Utc-Z3-t5q">
+                        <rect key="frame" x="0.0" y="66" width="100" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="3Tu-ml-aKC"/>
+                            <constraint firstAttribute="height" constant="21" id="yNq-3q-Gkv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Utc-Z3-t5q" firstAttribute="leading" secondItem="8fL-kC-xJd" secondAttribute="leadingMargin" constant="-8" id="Kr1-hm-buV"/>
+                    <constraint firstAttribute="topMargin" secondItem="xgi-HO-2ED" secondAttribute="top" id="PqK-YV-nHw"/>
+                    <constraint firstItem="xgi-HO-2ED" firstAttribute="leading" secondItem="Utc-Z3-t5q" secondAttribute="trailing" constant="8" id="b3H-67-ioe"/>
+                    <constraint firstItem="Utc-Z3-t5q" firstAttribute="top" secondItem="U3E-lt-Zd3" secondAttribute="bottom" constant="15" id="fbz-4e-sgg"/>
+                    <constraint firstItem="xgi-HO-2ED" firstAttribute="centerY" secondItem="8fL-kC-xJd" secondAttribute="centerY" id="h9I-7G-XwK"/>
+                    <constraint firstItem="U3E-lt-Zd3" firstAttribute="leading" secondItem="8fL-kC-xJd" secondAttribute="leadingMargin" constant="19" id="j73-1p-ldP"/>
+                    <constraint firstItem="U3E-lt-Zd3" firstAttribute="top" secondItem="8fL-kC-xJd" secondAttribute="topMargin" constant="-2" id="joa-PB-e3A"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="xgi-HO-2ED" secondAttribute="bottom" constant="-2" id="o60-qC-gKQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="hjmPhoto" destination="xgi-HO-2ED" id="HUb-DR-2KT"/>
+                <outlet property="imgCheck" destination="U3E-lt-Zd3" id="qfL-9v-ySg"/>
+                <outlet property="labelName" destination="Utc-Z3-t5q" id="Ag9-9Z-CTs"/>
+            </connections>
+            <point key="canvasLocation" x="-146.5" y="-165.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic-check.png" width="62" height="62"/>
+    </resources>
+</document>
